@@ -1,0 +1,15 @@
+{
+  "name": "avaron2",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-meteor": "^1.3.12",
+    "angular-ui-router": "^0.2.18",
+    "babel-runtime": "^6.20.0",
+    "bcrypt": "^1.0.2",
+    "meteor-node-stubs": "~0.2.4"
+  }
+}

@@ -1,0 +1,14 @@
+<header>
+  <h1>Open Games:</h1>
+</header>
+ 
+<ul>
+  <li ng-repeat="game in $ctrl.games">
+    Host: <strong>{{game.username}}</strong> - Room Number: <strong>{{game.num}}</strong> - Num Players: <strong>{{game.players.length}}</strong>
+    <button class="button-primary" ng-click="$ctrl.joinGame(game)" id="blue">join</button>
+    <button class="delete" ng-click="$ctrl.removeGame(game)">&times;</button>
+  </li>
+</ul>
+
+
+<input ng-click="$ctrl.createGame()" class="button-primary" type="button" value="create game" id="red">
