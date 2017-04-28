@@ -5,7 +5,7 @@
 <ul>
   <li ng-repeat="game in $ctrl.games">
     Host: <strong>{{game.username}}</strong> - Room Number: <strong>{{game.num}}</strong> - Num Players: <strong>{{game.players.length}}</strong>
-    <button class="button-primary" ng-click="$ctrl.joinGame(game)" id="blue">join</button>
+    <a href="/{{game.num}}"><button class="button-primary" ng-click="$ctrl.joinGame(game)" id="blue">join</button></a>
     <button class="delete" ng-click="$ctrl.removeGame(game)">&times;</button>
   </li>
 </ul>

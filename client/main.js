@@ -26,7 +26,12 @@ angular.module('game-lobby').config(['$urlRouterProvider', '$stateProvider', '$l
     	$stateProvider
     		.state('ingame', {
       			url: "/:roomNum",
-      			template: '<ingame></ingame>'
+      			template: '<ingame></ingame>',
+      			params: {
+      				roomNum: {
+      					value: 0
+      				}
+      			}
     		});
 
     	$urlRouterProvider.otherwise("/");
