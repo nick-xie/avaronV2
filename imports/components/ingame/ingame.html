@@ -1,4 +1,11 @@
 <header>
   <h1 id="gameheader"></h1>
 </header>
-asdas
+
+<ul id="list">
+  <li ng-repeat="player in $ctrl.players">
+    <strong>{{player.username}}</strong>
+  </li>
+</ul>
+<button class="button-primary" ng-click="$ctrl.toggle()" id="red">hide/unhide list</button><p><br>
+<button class="button-primary" ng-click="$ctrl.startGame(game)" id="blue">start game</button>

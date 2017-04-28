@@ -25,11 +25,11 @@ angular.module('game-lobby').config(['$urlRouterProvider', '$stateProvider', '$l
     		})
     	$stateProvider
     		.state('ingame', {
-      			url: "/:roomNum",
+      			url: "/:roomId",
       			template: '<ingame></ingame>',
       			params: {
-      				roomNum: {
-      					value: 0
+      				roomId: {
+      					value: ""
       				}
       			}
     		});

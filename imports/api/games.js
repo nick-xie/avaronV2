@@ -15,7 +15,7 @@ Meteor.methods({
       		createdAt: new Date(),
       		owner: Meteor.userId(),
       		username: Meteor.user().username,
-      		players: [Meteor.userId()],
+      		players: [Meteor.user()],
       		started: 0,
     	});
 	},
@@ -27,6 +27,6 @@ Meteor.methods({
   		if (!Meteor.userId()){
   			throw new Meteor.Error('not-authorized');
   		}
-  		Games.update({ _id: gameId }, { $push: { players: Meteor.userId() } });
+  		Games.update({ _id: gameId }, { $push: { players: Meteor.user() } });
   	},
 });
